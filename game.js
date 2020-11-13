@@ -42,7 +42,7 @@ $(document).keypress(function(){
   }
 })
 
-window.addEventListener('touchstart', function() {
+$(document).addEventListener('touchstart', function() {
   // the user touched the screen!
   if(!hasStarted){
     nextSequence();
