@@ -42,6 +42,14 @@ $(document).keypress(function(){
   }
 })
 
+window.addEventListener('touchstart', function() {
+  // the user touched the screen!
+  if(!hasStarted){
+    nextSequence();
+    hasStarted = true;
+  }
+});
+
 $(".btn").click(function() {
   var userChosenColor = $(this).attr("id");
   userClickedPattern.push(userChosenColor);
